@@ -1,0 +1,6 @@
+streamlit
+dashscope
+Pillow
+opencv-python-headless
+numpy
+ultralytics
