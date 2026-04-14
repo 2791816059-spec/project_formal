@@ -7,8 +7,8 @@ from ultralytics import YOLO
 
 # ====================== 1. 核心配置 ======================
 # 建议在实际部署时通过 st.secrets 管理 Key
-dashscope.api_key = "sk-d3929eacb6834ba7b46375b9082b545b" 
-YOLO_MODEL_PATH = r'D:\Anaconda\datas\runs\detect\breadboard_detect_v26\weights\best.pt'
+dashscope.api_key = st.secrets["DASHSCOPE_API_KEY"]
+YOLO_MODEL_PATH = "best.pt"
 CONFIDENCE_THRESHOLD = 80  # 置信度阈值
 MAX_REASONING_ROUNDS = 3   # 最大推理/提问轮次，防止无限循环
 
